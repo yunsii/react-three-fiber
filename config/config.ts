@@ -45,7 +45,7 @@ export default defineConfig({
     babelPlugins: [],
     babelOptions: {},
   },
-  base: '/playground',
-  publicPath: '/playground/',
+  base: '/react-three-fiber',
+  publicPath: '/react-three-fiber/',
   runtimePublicPath: true,
 });

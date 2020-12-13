@@ -1,8 +1,8 @@
 {
-  "name": "playground",
+  "name": "react-three-fiber",
   "version": "1.0.0",
   "private": true,
-  "description": "🎨 Code playground of React and Typescript.",
+  "description": "🎨 Code playground of react-three-fiber.",
   "scripts": {
     "analyze": "cross-env ANALYZE=1 umi build",
     "build": "umi build",
@@ -69,6 +69,8 @@
     "react-dev-inspector": "^1.1.1",
     "react-dom": "^17.0.0",
     "react-helmet-async": "^1.0.4",
+    "react-three-fiber": "^5.3.7",
+    "three": "^0.123.0",
     "umi": "^3.2.14",
     "umi-request": "^1.0.8",
     "use-merge-value": "^1.0.1"

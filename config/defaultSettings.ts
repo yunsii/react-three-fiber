@@ -12,7 +12,7 @@ const proSettings: DefaultSettings = {
   fixedHeader: false,
   fixSiderbar: true,
   colorWeak: false,
-  title: 'Playground',
+  title: 'three',
   pwa: false,
   iconfontUrl: '',
   splitMenus: false,

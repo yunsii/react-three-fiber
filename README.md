@@ -1,7 +1,7 @@
-<h1 align="center">Playgroud</h1>
+<h1 align="center">react-three-fiber</h1>
 
 <div align="center">
 
-🎨 Code playground of React and Typescript, based on ant design pro.
+🎨 Code playground of react-three-fiber.
 
 </div>

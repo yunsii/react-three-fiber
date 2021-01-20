@@ -12,6 +12,7 @@ function Box(props: MeshProps) {
 
   // Rotate mesh every frame, this is outside of React without overhead
   useFrame(() => {
+    // eslint-disable-next-line no-multi-assign
     if (mesh.current) mesh.current.rotation.x = mesh.current.rotation.y += 0.01;
   });
 
@@ -20,9 +21,9 @@ function Box(props: MeshProps) {
       {...props}
       ref={mesh}
       scale={active ? [1.5, 1.5, 1.5] : [1, 1, 1]}
-      onClick={(_event) => setActive(!active)}
-      onPointerOver={(event) => setHover(true)}
-      onPointerOut={(event) => setHover(false)}
+      onClick={() => setActive(!active)}
+      onPointerOver={() => setHover(true)}
+      onPointerOut={() => setHover(false)}
     >
       <boxBufferGeometry args={[1, 1, 1]} />
       <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
@@ -33,8 +34,8 @@ function Box(props: MeshProps) {
 export default (): React.ReactNode => {
   return (
     <Canvas>
-      {/* <ambientLight />
-      <pointLight position={[10, 10, 10]} /> */}
+      <ambientLight />
+      <pointLight position={[10, 10, 10]} />
       <Box position={[-1.2, 0, 0]} />
       <Box position={[1.2, 0, 0]} />
     </Canvas>

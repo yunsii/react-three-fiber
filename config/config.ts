@@ -41,7 +41,7 @@ export default defineConfig({
   plugins: ['react-dev-inspector/plugins/umi/react-inspector'],
   inspectorConfig: {
     // loader options type and docs see below
-    exclude: [],
+    exclude: ['react-three-fiber'],
     babelPlugins: [],
     babelOptions: {},
   },

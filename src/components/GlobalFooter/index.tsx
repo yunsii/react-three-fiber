@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { DefaultFooter } from '@ant-design/pro-layout';
 import { GithubOutlined } from '@ant-design/icons';
+import { repository } from '../../../package.json';
 
 export default function GlobalFooter() {
   return (
@@ -10,7 +11,7 @@ export default function GlobalFooter() {
         {
           key: 'github',
           title: <GithubOutlined />,
-          href: 'https://github.com/theprimone/docs',
+          href: repository.url,
           blankTarget: true,
         },
       ]}
